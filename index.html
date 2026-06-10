@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kemi Cakes — premium cake bakery in Uganda. Wedding cakes, birthday cakes, delivery, and custom orders." />
+  <title>Kemi Cakes | Premium Cakes in Uganda</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconify/iconify@3.0.1/font-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <div class="container nav-inner">
+      <a href="./index.html" class="brand" aria-label="Kemi Cakes Home">
+        <span class="brand-mark" aria-hidden="true"><img src="./cakes/Kemi Cakes logo..png" alt="Kemi Cakes logo" /></span>
+        <span class="brand-name">Kemi Cakes</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-controls="primaryNav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="primaryNav">
+        <a class="nav-link" href="./index.html">Home</a>
+        <a class="nav-link" href="./about.html">About Us</a>
+        <a class="nav-link" href="./gallery.html">Gallery</a>
+        <a class="nav-link" href="./services.html">Services</a>
+        <a class="nav-link" href="./contact.html">Contact</a>
+        <a class="nav-link primary" href="./order.html">Order</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark/light mode">
+          <i class="ri-sun-line" data-theme-icon="light" aria-hidden="true"></i>
+          <i class="ri-moon-line" data-theme-icon="dark" aria-hidden="true"></i>
+        </button>
+
+        <a class="icon-btn whatsapp" href="#" id="whatsappFloat" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+          <i class="ri-whatsapp-line" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Floating WhatsApp Button (mobile-friendly) -->
+  <a class="whatsapp-fab" id="whatsappFab" href="#" aria-label="WhatsApp" target="_blank" rel="noopener">
+    <i class="ri-whatsapp-line" aria-hidden="true"></i>
+  </a>
+
+  <!-- Main -->
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content" data-animate="fade-up">
+          <p class="eyebrow">Premium Cake Bakery • Uganda</p>
+          <h1 id="heroTitle">Luxury cakes crafted with love for every celebration.</h1>
+          <p class="lead">From elegant wedding cakes to rich chocolate delights—Kemi Cakes delivers warmth, quality, and unforgettable taste.</p>
+
+          <div class="hero-cta">
+            <a class="btn" href="./order.html">Order Now</a>
+            <a class="btn btn-ghost" href="./gallery.html">View Gallery</a>
+          </div>
+
+          <div class="hero-badges" role="list" aria-label="Highlights">
+            <div class="badge" role="listitem"><i class="ri-truck-line" aria-hidden="true"></i><span>Delivery in Uganda</span></div>
+            <div class="badge" role="listitem"><i class="ri-cake-2-line" aria-hidden="true"></i><span>Custom Designs</span></div>
+            <div class="badge" role="listitem"><i class="ri-star-line" aria-hidden="true"></i><span>Premium Ingredients</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card" data-animate="scale-up">
+          <h3>Quick Order</h3>
+          <p class="muted">Tell us your date and cake type. We’ll recommend the best style.</p>
+          <form class="mini-order" id="miniOrderForm">
+            <div class="grid">
+              <label>
+                <span>Wedding / Birthday / Custom</span>
+                <select name="cakeType" required>
+                  <option value="Wedding">Wedding Cake</option>
+                  <option value="Birthday">Birthday Cake</option>
+                  <option value="Custom">Custom Theme</option>
+                </select>
+              </label>
+              <label>
+                <span>Phone</span>
+                <input name="phone" type="tel" placeholder="e.g. +256..." required />
+              </label>
+            </div>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="3" placeholder="Size, flavor, theme, delivery area..." required></textarea>
+            </label>
+            <button class="btn btn-full" type="submit">Send Order Request</button>
+            <p class="tiny muted">We respond via WhatsApp or phone within business hours.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Welcome -->
+    <section class="section" aria-labelledby="welcomeTitle">
+      <div class="container split">
+        <div class="split-text" data-animate="fade-up">
+          <h2 id="welcomeTitle">Welcome to Kemi Cakes</h2>
+          <p class="muted">At Kemi Cakes, we believe every cake is a centerpiece—crafted to match your story, your colors, and your dreams.</p>
+          <p class="muted">Our team in Uganda combines premium ingredients, beautiful decoration techniques, and reliable delivery to bring comfort and joy to your celebrations.</p>
+          <div class="pill-row" role="list" aria-label="Quality promises">
+            <div class="pill" role="listitem"><i class="ri-shield-check-line" aria-hidden="true"></i> Hygiene-first</div>
+            <div class="pill" role="listitem"><i class="ri-palette-line" aria-hidden="true"></i> Designer finish</div>
+            <div class="pill" role="listitem"><i class="ri-cup-fill" aria-hidden="true"></i> Rich flavors</div>
+          </div>
+        </div>
+
+        <div class="split-media" data-animate="zoom-in">
+          <div class="media-card">
+            <div class="media-img" aria-hidden="true"></div>
+            <div class="media-caption">
+              <span class="gold">Kemi Signature</span>
+              <strong>Soft cream & chocolate brown elegance</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Cakes -->
+    <section class="section" aria-labelledby="featuredTitle">
+      <div class="container">
+        <div class="section-head" data-animate="fade-up">
+          <h2 id="featuredTitle">Featured Cakes</h2>
+          <p class="muted">Curated designs that customers love. Customize the colors, size, and toppings.</p>
+        </div>
+
+        <div class="cards" id="featuredGrid" data-animate="fade-up">
+          <article class="card cake-card">
+            <div class="card-media" aria-hidden="true" style="background-image:url('./assets/images/wedding-cake.jpg')"></div>
+            <div class="card-body">
+              <h3>Wedding Elegance</h3>
+              <p class="muted">Creamy layers with golden accents for timeless ceremonies.</p>
+              <div class="card-meta">
+                <span class="tag">Soft Cream</span>
+                <span class="tag gold">Gold Details</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="./order.html">Order this</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card cake-card">
+            <div class="card-media" aria-hidden="true" style="background-image:url('./assets/images/birthday-cake.jpg')"></div>
+            <div class="card-body">
+              <h3>Birthday Delight</h3>
+              <p class="muted">Chocolate brown richness with smooth, lovable textures.</p>
+              <div class="card-meta">
+                <span class="tag">Chocolate Brown</span>
+                <span class="tag gold">Premium Finish</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="./order.html">Order this</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card cake-card">
+            <div class="card-media" aria-hidden="true" style="background-image:url('./assets/images/cake-decoration.jpg')"></div>
+            <div class="card-body">
+              <h3>Designer Decoration</h3>
+              <p class="muted">Custom themes, delicate piping, and modern edible art.</p>
+              <div class="card-meta">
+                <span class="tag">Custom Theme</span>
+                <span class="tag gold">Edible Art</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="./order.html">Order this</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us + FAQ -->
+    <section class="section section-alt" aria-labelledby="whyTitle">
+      <div class="container two-col">
+        <div class="why" data-animate="fade-up">
+          <h2 id="whyTitle">Why choose Kemi Cakes?</h2>
+          <p class="muted">Premium taste, reliable delivery, and thoughtful customer care—every single order.</p>
+
+          <div class="feature-list" role="list" aria-label="Why choose us">
+            <div class="feature" role="listitem">
+              <div class="feature-icon"><i class="ri-wine-glass-line" aria-hidden="true"></i></div>
+              <div>
+                <h3>Rich & Balanced Flavors</h3>
+                <p class="muted">Soft cream, chocolate brown, and balanced sweetness—always crowd-friendly.</p>
+              </div>
+            </div>
+
+            <div class="feature" role="listitem">
+              <div class="feature-icon"><i class="ri-pie-chart-line" aria-hidden="true"></i></div>
+              <div>
+                <h3>Perfect Portioning</h3>
+                <p class="muted">We help you choose sizes based on guest count and event style.</p>
+              </div>
+            </div>
+
+            <div class="feature" role="listitem">
+              <div class="feature-icon"><i class="ri-truck-line" aria-hidden="true"></i></div>
+              <div>
+                <h3>Safe Delivery Packaging</h3>
+                <p class="muted">Delivery packaging designed to keep cakes fresh and beautiful on arrival.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq" data-animate="fade-up">
+          <div class="faq-head">
+            <h2>FAQ</h2>
+            <p class="muted">Common questions about orders, delivery, and customization.</p>
+          </div>
+
+          <div class="accordion" data-accordion>
+            <div class="acc-item">
+              <button class="acc-btn" type="button" aria-expanded="false">
+                How do I place an order?
+                <span class="acc-icon" aria-hidden="true"></span>
+              </button>
+              <div class="acc-panel" aria-hidden="true">
+                <p class="muted">Use the Order Page form. You can also send a request via WhatsApp and we’ll confirm flavors, size, and delivery.</p>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <button class="acc-btn" type="button" aria-expanded="false">
+                Do you offer custom designs?
+                <span class="acc-icon" aria-hidden="true"></span>
+              </button>
+              <div class="acc-panel" aria-hidden="true">
+                <p class="muted">Yes. Share your theme, colors, and any reference images. We’ll propose a design and finalize it with you.</p>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <button class="acc-btn" type="button" aria-expanded="false">
+                What about delivery packaging?
+                <span class="acc-icon" aria-hidden="true"></span>
+              </button>
+              <div class="acc-panel" aria-hidden="true">
+                <p class="muted">We use secure, cake-safe packaging to reduce movement and maintain quality during delivery.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-actions">
+            <a class="btn btn-ghost" href="./contact.html">Ask a Question</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+    <section class="section" aria-labelledby="testimonialsTitle">
+      <div class="container">
+        <div class="section-head" data-animate="fade-up">
+          <h2 id="testimonialsTitle">Testimonials</h2>
+          <p class="muted">What clients say about Kemi Cakes.</p>
+        </div>
+
+        <div class="slider" data-slider>
+          <div class="slider-track" id="sliderTrack">
+            <figure class="slide" data-slide>
+              <blockquote>
+                “The cake was beautiful and tasted amazing. Delivery was smooth and the design matched our theme perfectly.”
+              </blockquote>
+— Adella, Isingiro
+            </figure>
+            <figure class="slide" data-slide>
+              <blockquote>
+                “Premium quality from start to finish. The soft cream was so light and the gold details looked luxurious.”
+              </blockquote>
+              <figcaption>— Ambrose, Rugaaga</figcaption>
+            </figure>
+            <figure class="slide" data-slide>
+              <blockquote>
+                “Wedding cake looked like a dream. Guests couldn’t stop taking photos!”
+              </blockquote>
+              <figcaption>— Buhari, Kyampago</figcaption>
+            </figure>
+          </div>
+
+          <div class="slider-controls" aria-label="Testimonial slider controls">
+            <button class="icon-btn" data-prev aria-label="Previous testimonial"><i class="ri-arrow-left-s-line" aria-hidden="true"></i></button>
+            <div class="dots" data-dots aria-label="Slide selector"></div>
+            <button class="icon-btn" data-next aria-label="Next testimonial"><i class="ri-arrow-right-s-line" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery preview -->
+    <section class="section section-alt" aria-labelledby="galleryPreviewTitle">
+      <div class="container">
+        <div class="section-head" data-animate="fade-up">
+          <h2 id="galleryPreviewTitle">Gallery Preview</h2>
+          <p class="muted">Wedding cakes, birthday cakes, decorations, and delivery packaging.</p>
+        </div>
+
+        <div class="gallery-grid" data-animate="fade-up">
+          <a class="gallery-item" href="./assets/images/wedding-cake-large.jpg" data-lightbox>
+            <img src="./assets/images/wedding-cake.jpg" alt="Wedding cake" loading="lazy" />
+            <span class="gallery-cap">Wedding</span>
+          </a>
+          <a class="gallery-item" href="./assets/images/birthday-cake-large.jpg" data-lightbox>
+            <img src="./assets/images/birthday-cake.jpg" alt="Birthday cake" loading="lazy" />
+            <span class="gallery-cap">Birthday</span>
+          </a>
+          <a class="gallery-item" href="./assets/images/cake-decoration-large.jpg" data-lightbox>
+            <img src="./assets/images/cake-decoration.jpg" alt="Cake decoration" loading="lazy" />
+            <span class="gallery-cap">Decoration</span>
+          </a>
+<a class="gallery-item" href="./cakes/Kebi.png" data-lightbox>
+            <img src="./cakes/Kebi.png" alt="Delivery packaging" loading="lazy" />
+            <span class="gallery-cap">Packaging</span>
+          </a>
+          <a class="gallery-item" href="./assets/images/bakers-working-large.jpg" data-lightbox>
+            <img src="./assets/images/bakers-working.jpg" alt="Bakers working" loading="lazy" />
+            <span class="gallery-cap">Bakers</span>
+          </a>
+          <a class="gallery-item" href="./assets/images/custom-theme-large.jpg" data-lightbox>
+            <img src="./assets/images/custom-theme.jpg" alt="Custom theme cake" loading="lazy" />
+            <span class="gallery-cap">Custom</span>
+          </a>
+        </div>
+
+        <div class="center" data-animate="fade-up">
+          <a class="btn" href="./gallery.html">Explore Full Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA banner -->
+    <section class="cta" aria-labelledby="ctaTitle">
+      <div class="container cta-inner" data-animate="fade-up">
+        <div>
+          <h2 id="ctaTitle">Ready to place your order?</h2>
+          <p class="muted">Choose a style, confirm your date, and we’ll craft a premium cake for your event.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="./order.html">Start Order</a>
+          <a class="btn btn-ghost" href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter + Contact band -->
+    <section class="section" id="contact" aria-labelledby="newsletterTitle">
+      <div class="container two-col compact">
+        <div class="newsletter" data-animate="fade-up">
+          <h2 id="newsletterTitle">Newsletter</h2>
+          <p class="muted">Get new cake designs, seasonal flavors, and early order openings.</p>
+
+          <form class="newsletter-form" id="newsletterForm">
+            <label>
+              <span class="sr-only">Email</span>
+              <input type="email" name="email" placeholder="Your email" required />
+            </label>
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+          <p class="tiny muted">No spam. Unsubscribe anytime.</p>
+        </div>
+
+        <div class="contact-card" data-animate="fade-up">
+          <h2>Talk to us</h2>
+          <p class="muted">For orders, delivery, or custom designs—message us anytime.</p>
+          <div class="contact-pills" role="list">
+            <div class="pill" role="listitem"><i class="ri-whatsapp-line" aria-hidden="true"></i><span>WhatsApp: +256 752 112 179</span></div>
+            <div class="pill" role="listitem"><i class="ri-phone-line" aria-hidden="true"></i><span>Call/Phone: +256 791 711 855</span></div>
+Isingiro • Uganda
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-ghost" href="./contact.html">View Contact Page</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+      <i class="ri-close-line" aria-hidden="true"></i>
+    </button>
+    <img id="lightboxImg" alt="Gallery preview" />
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand" data-animate="fade-up">
+        <div class="brand-row">
+          <span class="brand-mark" aria-hidden="true"><img src="./cakes/Kemi Cakes logo..png" alt="Kemi Cakes logo" /></span>
+          <div>
+            <strong>Kemi Cakes</strong>
+            <p class="muted">Premium cake bakery in Uganda.</p>
+          </div>
+        </div>
+        <p class="tiny muted">Crafted for weddings, birthdays, and everything in between.</p>
+      </div>
+
+      <div class="footer-links" data-animate="fade-up">
+        <strong>Explore</strong>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./services.html">Services</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./order.html">Order</a>
+      </div>
+
+      <div class="footer-social" data-animate="fade-up">
+        <strong>Social</strong>
+        <div class="social-row">
+          <a class="social" href="#" aria-label="Instagram" target="_blank" rel="noopener"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+          <a class="social" href="#" aria-label="Facebook" target="_blank" rel="noopener"><i class="ri-facebook-line" aria-hidden="true"></i></a>
+          <a class="social" href="#" aria-label="TikTok" target="_blank" rel="noopener"><i class="ri-tiktok-line" aria-hidden="true"></i></a>
+          <a class="social" href="#" aria-label="YouTube" target="_blank" rel="noopener"><i class="ri-youtube-line" aria-hidden="true"></i></a>
+        </div>
+        <div class="tiny muted">© <span id="year"></span> Kemi Cakes. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
+
